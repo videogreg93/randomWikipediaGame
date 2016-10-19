@@ -12,3 +12,13 @@ body {
  left:0;
  padding-left: 1%;
 }
+
+#answers {
+        text-align: left;
+    font-size: 30px;
+    /*cursor: pointer;*/
+}
+
+.posAnswer {
+    cursor: pointer;
+}
