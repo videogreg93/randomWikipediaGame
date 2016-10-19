@@ -1,0 +1,14 @@
+body {
+    background-image: url("../img/bg.png");
+}
+
+#mainContent {
+    display: none;
+}
+
+.footer {
+     position:fixed;
+ bottom:0;
+ left:0;
+ padding-left: 1%;
+}

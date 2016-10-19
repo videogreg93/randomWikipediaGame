@@ -1,0 +1,41 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Wikipedia Game</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+    <h1 class = "text-center"> Guess That Wikipedia Article!</h1>
+    <div class = "row text-center">
+        <h4 class = "text-center">You will be presented with a random article from Wikipedia. Try to guess the title of the 
+        article! No cheating! However, keep in mind this is still early in developement, so some articles might not
+        work correctly 
+        </h4>
+        <br>
+        <div id = "mainContent">
+            <h2 id = "article"></h2>
+            <input type = "text" id = "answer">
+            <a class="large button" id="submitAnswer">Submit Answer</a>
+        </div>
+        <a class="large button" id="startButton">Start Game</a>
+    </div>
+    <div class = "row text-center">
+        <h3 id = "win">You have won 0 times</h3>
+    </div>
+    
+    <div class = "footer">
+        <p>Made out of boredom by <a href = "http://www.gregoryfournier.com">Gregory Fournier</a><p>
+    </div>
+    
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
