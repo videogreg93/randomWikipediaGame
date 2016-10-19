@@ -29,9 +29,9 @@ $('#submitAnswer').click(function() {
 
 function getArticle() {
     var temp;
-    $.getJSON("http://en.wikipedia.org/w/api.php?action=query&generator=random&grnnamespace=0&prop=extracts&explaintext&exintro=&format=json&callback=?", function (data) {
+    $.getJSON("https://en.wikipedia.org/w/api.php?action=query&generator=random&grnnamespace=0&prop=extracts&explaintext&exintro=&format=json&callback=?", function (data) {
     $.each(data.query.pages, function(k, v) {
-        $.getJSON('http://en.wikipedia.org/w/api.php?action=query&prop=extracts&explaintext&exintro=&pageids='+v.pageid+'&inprop=url&format=json&callback=?', function(url) {
+        $.getJSON('https://en.wikipedia.org/w/api.php?action=query&prop=extracts&explaintext&exintro=&pageids='+v.pageid+'&inprop=url&format=json&callback=?', function(url) {
         $.each(data.query.pages, function(k, v) {
         temp = v.extract;
         temp = /(\bis\b|\bwas\b)(.+)/g.exec(temp)[0];
